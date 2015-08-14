@@ -24,6 +24,7 @@ public class CopyOnWriteListDemo {
         }
 
         public void run() {
+            System.out.println(Thread.currentThread().getName() + " read");
             for (String str : list) {
                 System.out.println(str);
             }
@@ -46,6 +47,7 @@ public class CopyOnWriteListDemo {
         public void run() {
             list.remove(index);
             list.add(index, "write_" + index);
+            System.out.println(Thread.currentThread().getName() + " write");
         }
     }
 
