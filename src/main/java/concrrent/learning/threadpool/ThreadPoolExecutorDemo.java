@@ -10,7 +10,7 @@ import java.util.concurrent.TimeUnit;
  */
 public class ThreadPoolExecutorDemo {
 
-    private static final int PRODUCE_TASK_SLEEP_TIME = 2;
+    //private static final int PRODUCE_TASK_SLEEP_TIME = 2;
     private static final int CONSUME_TASK_SLEEP_TIME = 2000;
     private static final int AVAILABLE_PROCESSORS = Runtime.getRuntime().availableProcessors();
     private static final int MAXIMUM_POOL_SIZE = AVAILABLE_PROCESSORS * 2;
